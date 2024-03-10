@@ -7,31 +7,31 @@
     tools:context=".Lab3_sendBundledata">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="232dp"
         android:layout_marginEnd="104dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:hint="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/Enrollment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="324dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Enrollment"
+        android:hint="Enrollment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Bundle_Send_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
@@ -40,10 +40,10 @@
         android:text="Submit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/Depts_spinner"
         android:layout_width="228dp"
         android:layout_height="53dp"
         android:layout_marginStart="1dp"
@@ -51,5 +51,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/Enrollment" />
 </androidx.constraintlayout.widget.ConstraintLayout>

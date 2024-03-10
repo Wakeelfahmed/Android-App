@@ -1,10 +1,7 @@
 package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
-//import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.net.wifi.WifiManager;
-import android.text.format.Formatter;
 import android.widget.TextView;
 
 public class IP_Address extends AppCompatActivity {
@@ -14,11 +11,6 @@ public class IP_Address extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ip_address);
-
-        textView = (TextView) findViewById(R.id.IP_TextView);
-        WifiManager wifiManager = (WifiManager) getSystemService(WIFI_SERVICE);
-        String ipAddress = Formatter.formatIpAddress(wifiManager.getConnectionInfo().getIpAddress());
-        textView.setText("Your Device IP Address: " + ipAddress);
     }
 }
 

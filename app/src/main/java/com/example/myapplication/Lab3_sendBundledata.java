@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.os.Bundle;
+
 import android.content.Intent;
 
 public class Lab3_sendBundledata extends AppCompatActivity {
@@ -20,12 +20,12 @@ public class Lab3_sendBundledata extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab3_send_bundledata);
 
-        final Button button = findViewById(R.id.button4);
+        final Button button = findViewById(R.id.Bundle_Send_button);
 
-        final TextView name = (TextView) findViewById(R.id.editTextText);
-        final TextView enrollment = (TextView) findViewById(R.id.editTextText2);
+        final TextView name = (TextView) findViewById(R.id.Name);
+        final TextView enrollment = (TextView) findViewById(R.id.Enrollment);
 
-        Spinner spin = (Spinner) findViewById(R.id.spinner);
+        Spinner spin = (Spinner) findViewById(R.id.Depts_spinner);
 
         //Creating the ArrayAdapter instance having the country list
         ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, Depts);
