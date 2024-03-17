@@ -12,6 +12,7 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -37,7 +38,18 @@ public class MainActivity extends AppCompatActivity {
         final Button Sci_Calculator_button8 = findViewById(R.id.Sci_Calculator_button8);
         final Button button_notification = findViewById(R.id.button_notification);
         final Button settings = findViewById(R.id.Settings);
+        final Button SMS_Phone_button = findViewById(R.id.SMS_Phone_button);
+        final Button Email_button = findViewById(R.id.Email_button);
 
+        SMS_Phone_button.setOnClickListener(v -> {
+            Intent i = new Intent(getApplicationContext(), SMS_and_phone.class);
+            startActivity(i);
+        });
+
+        Email_button.setOnClickListener(v -> {
+            Intent i = new Intent(getApplicationContext(), Send_Email.class);
+            startActivity(i);
+        });
 
         button_notification.setOnClickListener(v -> {
             sendNotification();

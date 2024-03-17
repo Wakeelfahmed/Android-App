@@ -85,4 +85,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.819"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SMS_Phone_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="SMS/Phone"
+        app:layout_constraintTop_toBottomOf="@+id/Sci_Calculator_button8"
+        tools:layout_editor_absoluteX="17dp" />
+
+    <Button
+        android:id="@+id/Email_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="136dp"
+        android:text="Email"
+        app:layout_constraintStart_toEndOf="@+id/SMS_Phone_button"
+        app:layout_constraintTop_toBottomOf="@+id/button_notification" />
 </androidx.constraintlayout.widget.ConstraintLayout>
