@@ -40,9 +40,14 @@ public class MainActivity extends AppCompatActivity {
         final Button settings = findViewById(R.id.Settings);
         final Button SMS_Phone_button = findViewById(R.id.SMS_Phone_button);
         final Button Email_button = findViewById(R.id.Email_button);
+        final Button Google_Maps_button = findViewById(R.id.Google_Maps_button);
 
         SMS_Phone_button.setOnClickListener(v -> {
             Intent i = new Intent(getApplicationContext(), SMS_and_phone.class);
+            startActivity(i);
+        });
+        Google_Maps_button.setOnClickListener(v -> {
+            Intent i = new Intent(getApplicationContext(), Lab7_BUIC_GMaps_Activity.class);
             startActivity(i);
         });
 
